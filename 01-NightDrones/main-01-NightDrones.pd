@@ -139,7 +139,7 @@
 #X connect 9 1 5 0;
 #X restore 180 504 pd panning;
 #X obj 177 548 patchComs;
-#X obj 177 584 switch;
+#X obj 177 584 switch~;
 #X connect 0 0 54 0;
 #X connect 1 0 2 0;
 #X connect 1 0 3 0;

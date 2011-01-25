@@ -98,7 +98,7 @@
 #X obj 115 287 BangRand 10;
 #X obj 378 25 loadbang;
 #X obj 734 480 patchComs;
-#X obj 734 508 switch;
+#X obj 734 508 switch~;
 #X connect 0 0 30 0;
 #X connect 1 0 25 0;
 #X connect 2 0 29 0;

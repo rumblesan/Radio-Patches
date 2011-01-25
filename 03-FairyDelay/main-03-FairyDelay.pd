@@ -1,7 +1,7 @@
 #N canvas 223 14 1053 649 12;
 #X obj 42 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 205 34 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 205 34 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #N canvas 0 0 592 389 Tinkerbell 0;
 #X obj 60 94 abs;
@@ -298,7 +298,7 @@
 #X obj 450 178 t b;
 #X obj 208 11 loadbang;
 #X obj 704 516 patchComs;
-#X obj 704 550 switch;
+#X obj 704 550 switch~;
 #X connect 0 0 4 0;
 #X connect 0 0 3 0;
 #X connect 0 0 2 0;
