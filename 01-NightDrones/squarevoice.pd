@@ -1,4 +1,4 @@
-#N canvas 545 73 450 300 10;
+#N canvas 633 242 450 300 10;
 #X obj 150 166 osc~;
 #X obj 47 59 phasor~;
 #X obj 76 117 wrap~;
@@ -6,13 +6,14 @@
 #X obj 115 54 inlet~;
 #X obj 75 90 +~;
 #X obj 48 25 inlet~;
-#X obj 48 264 outlet~;
+#X obj 48 278 outlet~;
 #X obj 48 208 *~;
 #X obj 153 126 inlet~;
-#X obj 48 235 clip~ -0.6 0.4;
 #X text 96 25 Main Frequency;
 #X text 167 57 Rough PW Mod;
 #X text 204 122 Amplitude Mod;
+#X obj 49 256 lop~ 4000;
+#X obj 48 235 clip~ -0.8 0.6;
 #X connect 0 0 8 1;
 #X connect 1 0 3 0;
 #X connect 1 0 5 0;
@@ -21,6 +22,7 @@
 #X connect 4 0 5 1;
 #X connect 5 0 2 0;
 #X connect 6 0 1 0;
-#X connect 8 0 10 0;
+#X connect 8 0 14 0;
 #X connect 9 0 0 0;
-#X connect 10 0 7 0;
+#X connect 13 0 7 0;
+#X connect 14 0 13 0;
