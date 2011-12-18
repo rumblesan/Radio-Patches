@@ -1,4 +1,4 @@
-#N canvas -1310 80 1105 756 10;
+#N canvas -1628 75 1105 756 10;
 #X obj -109 -167 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
 #X obj -101 -142 metro 400;
@@ -153,7 +153,6 @@
 #X obj 258 371 *~ 1;
 #X obj -204 549 throw~ \$0-l;
 #X obj -106 556 throw~ \$0-r;
-#X obj 294 772 patchcoms;
 #X obj 293 726 catch~ \$0-l;
 #X obj 344 748 catch~ \$0-r;
 #X obj 54 945 throw~ \$0-l;
@@ -165,9 +164,10 @@
 #X obj -221 -190 s \$0-lb;
 #X obj 180 35 r \$0-go;
 #X obj -212 611 r \$0-lb;
+#X obj 294 772 patchComs;
 #X connect 0 0 1 0;
 #X connect 0 0 41 0;
-#X connect 0 0 154 0;
+#X connect 0 0 153 0;
 #X connect 1 0 2 0;
 #X connect 1 0 13 0;
 #X connect 1 0 28 0;
@@ -337,8 +337,8 @@
 #X connect 121 0 120 1;
 #X connect 121 0 129 3;
 #X connect 122 0 66 0;
-#X connect 123 0 152 0;
-#X connect 124 0 153 0;
+#X connect 123 0 151 0;
+#X connect 124 0 152 0;
 #X connect 125 0 114 1;
 #X connect 126 0 144 0;
 #X connect 127 0 145 0;
@@ -352,17 +352,17 @@
 #X connect 132 0 103 1;
 #X connect 132 0 133 0;
 #X connect 132 0 134 0;
-#X connect 133 0 149 0;
-#X connect 134 0 150 0;
+#X connect 133 0 148 0;
+#X connect 134 0 149 0;
 #X connect 135 0 136 0;
-#X connect 135 0 155 0;
+#X connect 135 0 154 0;
 #X connect 136 0 0 0;
 #X connect 138 0 116 0;
 #X connect 140 0 26 0;
 #X connect 142 0 7 0;
 #X connect 143 0 64 0;
-#X connect 146 0 151 0;
-#X connect 147 0 146 0;
-#X connect 148 0 146 1;
-#X connect 156 0 40 0;
-#X connect 157 0 138 0;
+#X connect 146 0 157 0;
+#X connect 147 0 157 1;
+#X connect 155 0 40 0;
+#X connect 156 0 138 0;
+#X connect 157 0 150 0;
